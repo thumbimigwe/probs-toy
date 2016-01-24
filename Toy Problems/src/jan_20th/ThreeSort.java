@@ -1,4 +1,7 @@
 package jan_20th;
+import java.util.Arrays;
+import java.lang.Math;
+
 //THREESORT
 //LANGUAGE: JAVA
 
@@ -17,14 +20,17 @@ package jan_20th;
 //ThreeSort.threeSort(9,4,6); // [4,6,9]
 //ThreeSort.threeSort(3,2,1); // [1,2,3]
 
-public class ThreeSort {
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class ThreeSort { //the class
+	
+	public static int[] threeSort (int a, int b, int c){ //declaring method with return type array
+		int[]  num={a,b,c}; // assigning variables to new array
+		Arrays.sort(num); // sort method of the array class
+		return num;
 	}
 
-}
+	
+	public static void main(String[] args) { 
+		System.out.println(Arrays.toString(ThreeSort.threeSort(9,4,6))); //printing out the converted array to string
+		System.out.println(Arrays.toString(ThreeSort.threeSort(3,2,1))); //printing out the converted array to string
+		}
+	}
