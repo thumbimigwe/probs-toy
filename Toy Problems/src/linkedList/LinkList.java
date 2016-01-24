@@ -1,0 +1,5 @@
+package linkedList;
+
+class LinkList {
+
+}
