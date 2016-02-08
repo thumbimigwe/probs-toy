@@ -36,5 +36,6 @@ public class MinMax {
 		
 		while(j!=0);
 		System.out.println("Minimum: "+minimum+"\nMaximum: "+maximum);
+		System.out.println("Sorted Array:" + Arrays.toString(result));
 	}
 }
