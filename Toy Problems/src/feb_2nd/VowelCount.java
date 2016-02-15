@@ -36,3 +36,72 @@ public class VowelCount {
 	}
 
 }
+
+
+
+
+package vowelcount;
+import java.util.HashMap;
+/**
+ *
+ * @author kimaiga
+ */
+public class VowelCount {
+
+    /**
+     * @param args the command line arguments
+     */
+    //vowel count method goes here-I'll make it static
+public static HashMap vowelcount (String str){
+		
+		//create hashmap object
+                HashMap <Character, Integer> x = new HashMap <Character, Integer> (); 
+		
+              
+		int a = 0; int e = 0; int ii = 0; int o = 0; int u = 0;
+		
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            
+            if (ch == 'a'){
+            	a= a+1;
+            } 
+            
+            if (ch == 'e'){
+            	e= e+1;
+            }
+            
+            if (ch == 'u'){
+            	u= u+1;
+            } 
+            
+            if (ch == 'i'){
+            	ii= ii+1;
+            } 
+            
+            if (ch == 'o'){
+            	o=o+1;
+           } 
+            
+            x.put('a', a);
+            x.put('e', e);
+            x.put('u', ii);
+            x.put('i', o);
+            x.put('o', u);
+            
+            
+        }
+        
+      //returning hashmap object 
+        return x;
+		
+	}
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //print output here
+        System.out.println(VowelCount.vowelcount("Moringa School"));	
+	System.out.println(VowelCount.vowelcount("Code School"));
+    }
+    
+}
