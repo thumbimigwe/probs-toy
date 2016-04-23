@@ -8,7 +8,7 @@ public class Gcf extends Divide{
 		Divide d = new Divide();
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Input the first num: ");
+		System.out.print("Input the first num: 1");
 		int a = sc.nextInt();
 		
 		System.out.print("Input the Second num: ");
